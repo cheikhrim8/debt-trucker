@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Clock, CheckCircle, AlertCircle, Edit, Trash2 } from 'lucide-react';
+import { Phone, Clock, CheckCircle, AlertCircle, Trash2 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useData } from '../contexts/DataContext';
 import { getTranslation } from '../utils/translations';

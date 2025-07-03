@@ -7,6 +7,7 @@ export const mockPeople: Person[] = [
     phone: '(555) 123-4567',
     balance: 750,
     status: 'pending',
+    createdAt: new Date('2024-01-01'), // 👈 Add this line
     lastUpdated: new Date('2024-01-15')
   },
   {
@@ -15,6 +16,7 @@ export const mockPeople: Person[] = [
     phone: '(555) 234-5678',
     balance: -200,
     status: 'paid',
+    createdAt: new Date('2024-01-01'), // 👈 Add this line
     lastUpdated: new Date('2024-01-10')
   },
   {
@@ -23,6 +25,7 @@ export const mockPeople: Person[] = [
     phone: '(555) 345-6789',
     balance: 1200,
     status: 'partial',
+    createdAt: new Date('2024-01-01'), // 👈 Add this line
     lastUpdated: new Date('2024-01-12')
   },
   {
@@ -31,6 +34,7 @@ export const mockPeople: Person[] = [
     phone: '(555) 456-7890',
     balance: -500,
     status: 'pending',
+    createdAt: new Date('2024-01-01'), // 👈 Add this line
     lastUpdated: new Date('2024-01-14')
   },
   {
@@ -39,6 +43,7 @@ export const mockPeople: Person[] = [
     phone: '(555) 567-8901',
     balance: 300,
     status: 'pending',
+    createdAt: new Date('2024-01-01'), // 👈 Add this line
     lastUpdated: new Date('2024-01-11')
   },
   {
@@ -47,6 +52,7 @@ export const mockPeople: Person[] = [
     phone: '(555) 678-9012',
     balance: 0,
     status: 'paid',
+    createdAt: new Date('2024-01-01'), // 👈 Add this line
     lastUpdated: new Date('2024-01-08')
   }
 ];
@@ -66,7 +72,7 @@ export const mockTransactions: Transaction[] = [
     id: '2',
     personId: '2',
     personName: 'Bob Smith',
-    type: 'payment',
+    type: 'debit',
     amount: 100,
     description: 'Partial payment received',
     date: new Date('2024-01-14'),
@@ -86,7 +92,7 @@ export const mockTransactions: Transaction[] = [
     id: '4',
     personId: '4',
     personName: 'Diana Prince',
-    type: 'debt',
+    type: 'debit',
     amount: 500,
     description: 'Car repair loan',
     date: new Date('2024-01-11'),

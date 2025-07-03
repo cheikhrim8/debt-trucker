@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+// import { useLanguage } from '../contexts/LanguageContext';
 import { useData } from '../contexts/DataContext';
 import { BalanceSummary } from './BalanceSummary';
 import { PeopleList } from './PeopleList';
@@ -11,7 +11,7 @@ import { Header } from './Header';
 import { BalanceSummary as BalanceSummaryType, Person } from '../types';
 
 export const Dashboard: React.FC = () => {
-  const { language, isRTL } = useLanguage();
+  // const { language, isRTL } = useLanguage();
   const { people, transactions } = useData();
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
